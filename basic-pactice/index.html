@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Current Date And Time</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" >
+</head>
+<body>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 text-center">
+                    <button onclick="document.getElementById('demo').innerHTML=Date()" class="btn btn-primary">
+                        Show Date
+                    </button>
+                    <p id="demo"></p>
+                    <p id="pera"> i am Faruk</p>
+                    <button class="btn btn-warning" onclick='document.getElementById("pera").innerHTML="Hello Faruk"'>Html Content Change</button>
+                </div>
+                <div class="col-md-4 col-sm-12 text-center">
+                    <button class="btn btn-success" onclick="document.getElementById('myimg').src='pic_bulbon.gif'">Light On</button>
+                    <img width="100px" id="myimg" src="pic_bulboff.gif" alt="">
+                    <button class="btn btn-danger" onclick="document.getElementById('myimg').src='pic_bulboff.gif'">Light off</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <p id="css">Hello Faruk</p>
+                    <button class="btn btn-warning" onclick="document.getElementById('css').style.fontSize='45px'">Click me to change</button>
+                    <button class="btn btn-success" onclick="document.getElementById('css').style.fontSize='16px'">Back</button>
+                    <span id="hide">Hellow Faruk </span>
+                    <button class="btn btn-danger" onclick="document.getElementById('hide').style.display='none'">Hide Element</button>
+                    <button class="btn btn-primary" onclick="document.getElementById('hide').style.display='block'">Show</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>use  Function to change value</h2>
+                    <p id="c-value">This is peragraph for change</p>
+                    <button class="btn btn-danger" onclick="myFunction()">Change Value</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function myFunction(){
+            document.getElementById('c-value').innerHTML="The Peragraph Is change";
+        }
+    </script>
+</body>
+</html>
